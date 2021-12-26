@@ -18,6 +18,8 @@ public class CurrencyConversionBean {
 
 	private String environment;
 	
+	private String serverPort;
+	
 	public CurrencyConversionBean(Long id, String from, String to, BigDecimal conversionMultiple, BigDecimal quantity,
 			BigDecimal totalValue, String environment) {
 		super();
@@ -90,5 +92,13 @@ public class CurrencyConversionBean {
 	public void setEnvironment(String environment) {
 		this.environment = environment;
 	}
-	
+
+	public String getServerPort() {
+		return serverPort;
+	}
+
+	public void setServerPort(String serverPort) {
+		this.serverPort = serverPort;
+	}
+
 }

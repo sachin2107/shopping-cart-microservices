@@ -56,6 +56,6 @@ public class CurrencyConversionController {
 		CurrencyConversionBean body = proxy.retrieveCurrencyExchange(from, to);
 		
 		return new CurrencyConversionBean(body.getId(), from, to, body.getConversionMultiple(), quantity,
-				quantity.multiply(body.getConversionMultiple()), cfgEnv.getProperty("server.port"));
+				quantity.multiply(body.getConversionMultiple()), body.getServerPort());
 	}
 }
